@@ -252,8 +252,34 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 13px;
       font-style: italic;
-      color: rgba(240,235,227,0.2);
+      color: rgba(0,0,0,0.2);
       letter-spacing: 0.05em;
+    }
+
+    .instagram {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      opacity: 0;
+      animation: fadeUp 1.2s ease forwards 1.4s;
+      transition: opacity 0.2s;
+    }
+
+    .instagram:hover { opacity: 0.7 !important; }
+
+    .instagram svg {
+      width: 18px;
+      height: 18px;
+      color: var(--sand);
+    }
+
+    .instagram span {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: var(--sand);
     }
 
     /* ════════════════════════════════
@@ -326,6 +352,14 @@
     <!-- Bottom -->
     <footer class="bottombar">
       <span class="bottombar-left">© 2026 Metasurfing Books</span>
+      <a class="instagram" href="https://www.instagram.com/metasurfing.books" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>metasurfing.books</span>
+      </a>
       <span class="bottombar-right">The art of surfing, on paper.</span>
     </footer>
 
