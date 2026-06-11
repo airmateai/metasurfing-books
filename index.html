@@ -283,6 +283,59 @@
     }
 
     /* ════════════════════════════════
+       MOBILE
+    ════════════════════════════════ */
+    @media (max-width: 600px) {
+      html, body { overflow-y: auto; height: auto; }
+
+      .page {
+        height: auto;
+        min-height: 100vh;
+        padding: 32px 24px 28px;
+      }
+
+      .books-bg {
+        width: 100vw;
+        height: 75vh;
+      }
+
+      .topbar-name { font-size: 9px; letter-spacing: 0.25em; }
+      .topbar-right { font-size: 9px; letter-spacing: 0.2em; }
+
+      .center-logo { width: 160px; height: 160px; margin-bottom: 20px; }
+
+      .eyebrow { font-size: 9px; letter-spacing: 0.35em; margin-bottom: 22px; }
+
+      .headline { font-size: clamp(52px, 16vw, 80px); }
+
+      .rule { margin: 22px auto; height: 30px; }
+
+      .nav-list {
+        gap: 0;
+        row-gap: 14px;
+      }
+
+      .nav-list a {
+        font-size: 8px;
+        padding: 0 10px;
+        letter-spacing: 0.25em;
+      }
+
+      .nav-sep { height: 8px; }
+
+      .bottombar {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        padding-top: 32px;
+      }
+
+      .bottombar-left, .bottombar-right { font-size: 9px; }
+
+      .instagram span { font-size: 10px; }
+    }
+
+    /* ════════════════════════════════
        ANIMATIONS
     ════════════════════════════════ */
     @keyframes fadeUp {
